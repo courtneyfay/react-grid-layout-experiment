@@ -14,9 +14,9 @@ const Dashboard = () => {
     <>
       <PageHeader>Dashboard with widgets</PageHeader>
       <StyledDashboard>
+        <ChartsWidget />
         <TextWidget />
         <JSONWidget />
-        <ChartsWidget />
       </StyledDashboard>
     </>
   )
