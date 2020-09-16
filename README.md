@@ -8,6 +8,8 @@ Figure out how to combine react-grid-layout with widgets, specifically:
 - a JSON widget
 - a React Google Charts widget
 
+![Experiment screenshot](src/experiment-screenshot.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
