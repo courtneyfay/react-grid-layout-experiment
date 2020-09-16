@@ -1,3 +1,13 @@
+# React Grid Layout experiment
+
+## The Goal
+
+Figure out how to combine react-grid-layout with widgets, specifically:
+
+- a text widget
+- a JSON widget
+- a React Google Charts widget
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
