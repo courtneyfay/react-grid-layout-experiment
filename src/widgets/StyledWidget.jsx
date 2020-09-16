@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 const WidgetStyle = styled.div`
-  width: 48%;
+  max-width: 43%;
   border: 2px solid blue;
   border-radius: 25px;
+  padding: 1rem;
+  margin: 1rem;
 `;
 
 export default WidgetStyle;
