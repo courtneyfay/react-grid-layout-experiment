@@ -1,5 +1,4 @@
 import React from 'react';
-import WidgetStyle from './StyledWidget';
 import data from './chartsData';
 import Chart from "react-google-charts";
 
@@ -36,7 +35,7 @@ const lineChartConfig = {
 
 const ChartsWidget = () => {
   return (
-    <WidgetStyle>
+    <>
       <h1>Charts widget example</h1>
       <Chart
         chartType="LineChart"
@@ -45,7 +44,7 @@ const ChartsWidget = () => {
         data={data}
         options={lineChartConfig}
       />
-    </WidgetStyle>
+    </>
   )
 };
 
