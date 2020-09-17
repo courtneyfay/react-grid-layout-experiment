@@ -10,7 +10,9 @@ Figure out how to combine react-grid-layout with widgets, specifically:
 
 ![Experiment screenshot](src/images/experiment-screenshot.png)
 
-![Moving widgets GIF](src/images/moving-fake-widgets.gif)
+![Moving fake widgets GIF](src/images/moving-fake-widgets.gif)
+
+![Moving actual widgets GIF](src/images/moving-widgets.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
