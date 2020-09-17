@@ -18,6 +18,12 @@ const Dashboard = () => {
     //todo: this should update local storage
   };
 
+  const layout = [
+    {x: 0, y: 0, w: 6, h: 13},
+    {x: 6, y: 0, w: 6, h: 13},
+    {x: 3, y: 15, w: 6, h: 30},
+  ]
+
   return (
     <>
       <PageHeader>Dashboard with widgets</PageHeader>
@@ -28,14 +34,13 @@ const Dashboard = () => {
         width={1200}
         onLayoutChange={handleLayoutChange}
       >
-        {/* todo: these data-grid values should be an array fetched from local storage */}
-        <WidgetStyle key="a" data-grid={{x: 0, y: 0, w: 6, h: 13}}>
+        <WidgetStyle key="a" data-grid={layout[0]}>
           <TextWidget />
         </WidgetStyle>
-        <WidgetStyle key="b" data-grid={{x: 6, y: 0, w: 6, h: 13}}>
+        <WidgetStyle key="b" data-grid={layout[1]}>
           <ChartsWidget />
         </WidgetStyle>
-        <WidgetStyle key="c" data-grid={{x: 3, y: 15, w: 6, h: 30}}>
+        <WidgetStyle key="c" data-grid={layout[2]}>
           <JSONWidget />
         </WidgetStyle>
       </ReactGridLayout>
