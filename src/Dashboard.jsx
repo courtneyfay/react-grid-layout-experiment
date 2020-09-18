@@ -12,17 +12,29 @@ const PageHeader = styled.h1`
 
 const Dashboard = () => {
   const ReactGridLayout = WidthProvider(RGL);
-
-  const handleLayoutChange = newLayout => {
-    console.log('everythings changing', newLayout);
-    //todo: this should update local storage
-  };
-
-  const layout = [
+  const defaultLayout = [
     {x: 0, y: 0, w: 6, h: 13, minW: 6, minH: 13, isResizable: true, isDraggable: true},
     {x: 6, y: 0, w: 6, h: 13, minW: 6, minH: 13, isResizable: true, isDraggable: true},
     {x: 3, y: 15, w: 6, h: 30, minW: 6, minH: 30, isResizable: true, isDraggable: true},
-  ]
+  ];
+  const getFromLocalStorage = (key) => {
+    let value;
+    if (global.localStorage) {
+      value = global.localStorage.getItem(key);
+    }
+    return JSON.parse(value);
+  }
+  const layout = getFromLocalStorage('layout') || defaultLayout;
+  
+  const saveToLocalStorage = (key, value) => {
+    if (global.localStorage) {
+      global.localStorage.setItem(key, JSON.stringify(value));
+    }
+  }
+
+  const handleLayoutChange = newLayout => {
+    saveToLocalStorage('layout', newLayout);
+  };
 
   return (
     <>
