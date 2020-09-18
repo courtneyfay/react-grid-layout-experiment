@@ -16,6 +16,8 @@ Figure out how to combine react-grid-layout with widgets, specifically:
 
 ![Resizable widget GIF](src/images/resizable-widget.gif)
 
+![Persistent widgets GIF](src/images/persistent-widgets.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
